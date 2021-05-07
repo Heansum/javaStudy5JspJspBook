@@ -8,12 +8,19 @@
  -->
 
 <%
-	
-	boolean isLogin = (boolean) session.getAttribute("isLogin");
-	if(isLogin){
-		response.sendRedirect("/JSPBook/chapter14/sessionIndex.jsp");		
-	}
+	try{
 		
+		boolean isLogin = (boolean) session.getAttribute("isLogin");
+		if(isLogin){
+			response.sendRedirect("/JSPBook/chapter14/sessionIndex.jsp");		
+		} 
+	} catch(NullPointerException e){
+		// NullPointerException이 발생하는 이유(조건)
+		// 이유를 파악하고 그에 맞는 적절한 행동을 하세요.
+		// 로그인을 하지 않아서
+		
+	}
+	
 %>
 
 
