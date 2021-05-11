@@ -19,7 +19,7 @@
 		<fieldset>
 			<a href="/JSPBook/chapter16/join.jsp" style="margin-right: 30px;">회원가입</a>
 			<a href="/JSPBook/chapter16/find_id.jsp" style="margin-right: 30px;">아이디 찾기</a>
-			<a href="/JSPBook/chpater16/find_pw.jsp">비밀번호 찾기</a>
+			<a href="/JSPBook/chapter16/find_pw.jsp">비밀번호 찾기</a>
 		</fieldset>
 		
 	</form>
@@ -34,7 +34,7 @@
 			var pw = $("[name=pw]").val();
 			
 			$.ajax({
-				url:"/JSPBook/chapter16/login_process.jsp",
+				url:"/JSPBook/member/login",
 				data:"id="+id+"&pw="+pw,
 				type: "post",
 				success: function(){

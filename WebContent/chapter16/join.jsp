@@ -50,8 +50,8 @@
 				return false;
 			}
 			
-			$.ajax({
-				url:"/JSPBook/chapter16/join_process.jsp",
+			$.ajax ({
+				url:"/JSPBook/member/join",
 				data:"id="+id+"&pw="+pw+"&name="+name,
 				type: "post",
 				success: function() {
